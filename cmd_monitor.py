@@ -5,6 +5,7 @@ import os
 import time
 import argparse
 import subprocess
+import multiprocessing
 from multiprocessing import Process, Pool
 
 DEFAULT_MONITOR_DIR = ""  # 监控目录
@@ -158,6 +159,7 @@ class SrvRDP:
 
 
 if __name__ == '__main__':
+    multiprocessing.freeze_support()  # 解决打包多进程报错
     client = SrvRDP()
     client.monitor()
     # 打包 pyinstaller -F -c -i mirror.ico srv_rdp.py (图标+本脚本)
