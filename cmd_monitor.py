@@ -53,7 +53,7 @@ class SrvRDP:
         Returns:
             [dict]: 客制配置
         """
-        parser = argparse.ArgumentParser("Sangfor RDP Scan Client")
+        parser = argparse.ArgumentParser("RDP Scan Client")
         parser.add_argument("-m", "--monitor_dir", default=DEFAULT_MONITOR_DIR, help="监控文件目录")
         parser.add_argument("-c", "--cwd", default=DEFAULT_RESULT_CWD, help="执行目录")
         parser.add_argument("-i", "--input_ext", default=DEFAULT_CMD_FILE_EXT, help="输入脚本文件扩展")
