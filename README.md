@@ -11,7 +11,7 @@ pyinstaller -F -c cmd_monitor.py
 
 ## help
 ```bash
-usage: Sangfor RDP Scan Client [-h] [-m MONITOR_DIR] [-c CWD] [-i INPUT_EXT] [-o OUTPUT_EXT]
+usage: RDP Scan Client [-h] [-m MONITOR_DIR] [-c CWD] [-i INPUT_EXT] [-o OUTPUT_EXT]
 
 optional arguments:
   -h, --help            show this help message and exit
